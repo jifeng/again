@@ -9,7 +9,7 @@ again
 
 1. 定时从数据库中读取数据
 
-2. 等待满足某些条件时再启动启动进程
+2. 等待满足某些条件时再启动进程
 
 ##安装
 
@@ -31,7 +31,7 @@ again
       console.log(data);
     });
     
-    //每个10ms，执行一遍addCallTimes,一共执行100词
+    //每个10ms，执行一遍addCallTimes,一共执行100次
     var againHundredTimes = again(addCallTimes, 10, 100);
     againHundredTimes(function (err, data) {
       console.log(data);
